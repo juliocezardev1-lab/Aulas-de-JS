@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de texto/número decimal</title>
+    <script>
+        var altura = parseFloat(prompt("Digite sua altura: "));
+        var peso = parseFloat(prompt("Agora digite seu peso: "));
+
+        var imc = peso / (altura * altura);
+        document.write("Seu IMC é: ", imc.toFixed(1)); //toFixed() define o número de casas decimais
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

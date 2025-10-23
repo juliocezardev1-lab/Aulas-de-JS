@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o padrão de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>Exercicio 1</title>
+    <script>
+        var nome = ""; // Variável global para armazenar o nome
+        var idade = ""; // Variável global para armazenar a idade
+
+        // Função chamada ao clicar no botão "Guardar"
+        function guardarNome() {
+            nome = document.getElementById("input-nome").value; // Pega o valor do campo de nome
+            document.getElementById("form-nome").style.display = "none"; // Esconde o formulário do nome
+            document.getElementById("form-idade").style.display = "block"; // Mostra o formulário da idade
+        }
+
+        // Função chamada ao clicar no botão "Exibir"
+        function exibir() {
+            idade = document.getElementById("input-idade").value; // Pega o valor do campo de idade
+            alert("Seu nome é " + nome + " e você tem " + idade + " anos"); // Mostra um alerta com nome e idade
+            // Limpa os campos e volta para o formulário do nome
+            document.getElementById("input-nome").value = ""; // Limpa o campo de nome
+            document.getElementById("input-idade").value = ""; // Limpa o campo de idade
+            document.getElementById("form-idade").style.display = "none"; // Esconde o formulário da idade
+            document.getElementById("form-nome").style.display = "block"; // Mostra o formulário do nome
+        }
+    </script>
+</head>
+<body>
+    <!-- Formulário para digitar o nome -->
+    <div id="form-nome">
+        <label for="input-nome">Digite seu nome:</label>
+        <input type="text" id="input-nome">
+        <button onclick="guardarNome()">Guardar</button> <!-- Chama guardarNome ao clicar -->
+    </div>
+    <!-- Formulário para digitar a idade (inicialmente escondido) -->
+    <div id="form-idade" style="display: none;">
+        <label for="input-idade">Digite sua idade:</label>
+        <input type="number" id="input-idade">
+        <button onclick="exibir()">Exibir</button> <!-- Chama exibir ao clicar -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function enviar(){ //function serve para criar uma função que pode ser chamada depois
+            var valor = document.getElementById("textinput").value; //pega o valor do input
+            alert("Você digitou: "+valor); //mostra o valor em um alerta
+
+            //recarrega a página
+            // location.reload();
+
+            // Limpar o campode imput ao invés de recarregar a página
+            document.getElementById("textinput").value = "";
+            
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="textinput" placeholder="Digite algo aqui"> <!-- O place holter é um texto que ira desaparecer é uma "sombra"-->
+    <!-- pode tirar o nome = bla bl abla se quiser-->
+    <button onclick="enviar()">OK</button>
+</body>
+</html>

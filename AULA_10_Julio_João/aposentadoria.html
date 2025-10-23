@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aposentadoria</title>
+    Qual a sua idade?
+    <input type="text" id="idade">
+    <button onclick="verificar()">Verificar</button> <br>
+    <script>
+        function verificar(){
+            var idade = document.getElementById("idade").value;
+            var falta = (65 - idade)
+            if(idade <= 65){
+                alert("Você tem "+idade+" anos, Faltam "+falta+" anos para você se aposentar")
+            }
+            else{
+                alert("Você ja pode se aposentar")
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
