@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Função</title>
+    <script>
+        //Função declarada, só pode ser consumida depois de ser escrita
+        function soma (a, b){
+
+            return (a+b);
+
+        }
+
+        console.log(soma(10,20));
+
+        //Funções expressas, poder ser consumida antes de ser escrita
+        const multiplicacao = function(c,d){
+
+            return c*d;
+
+        }
+
+        console.log(multiplicacao(10,15));
+
+        //Funções anonimas
+        setTimeout( function() {
+
+            console.log("Esta é uma função anônima");
+        },3000);
+       
+        //Arrow Functions
+        const divisao = (num1,num2) => {
+
+            return num1 / num2;
+        }
+
+        console.log(divisao(20,4));
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
