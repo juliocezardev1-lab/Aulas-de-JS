@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tarefa10 - Soma dos dígitos</title>
+	<script>
+		// Dado o número 12345, somar seus dígitos usando a dica:
+		// converter para string, split("") -> array de caracteres,
+		// map(Number) -> array de dígitos, reduce() -> soma.
+
+		const numero = [12345];
+		const soma = String(numero)
+			.split("")
+			.map(Number)
+			.reduce((acumulador, valor) => acumulador + valor, 0);
+
+		console.log(`Soma dos dígitos de ${numero}, ou 1+2+3+4+5: ${soma}`);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
