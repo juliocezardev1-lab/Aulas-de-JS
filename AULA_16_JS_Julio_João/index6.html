@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo reduce em Arrays</title>
+    <script>
+        const numeros = [1,2,3,20];
+        console.log(numeros);
+
+        const soma = numeros.reduce((total, num) => total + num,0);
+        console.log(soma);
+
+        const max = numeros.reduce((maior,num)=>{
+            num > maior ? num: maior,numeros[0]; // Isso é igual ao if e else.
+            console.log(max)
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
