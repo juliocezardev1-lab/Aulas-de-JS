@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método com parametros</title>
+    <script>
+
+        //o que esta comentado é um jeito de como se fazer isso via "prompt" ou via button, onde o id vai ser numero 1 então acarretando nas alterações abaixo;
+
+        //function receber(){
+        //    const a = ParseInt(document.getElementById("numero1").value);
+        //}
+        class Calculadora{
+            somar(a,b){
+                return a + b;
+            }
+            subtrair(a,b){
+                return a - b;
+            }
+            multiplicacao(a,b){
+                return a * b;
+            }
+            divisao(a,b){
+                return a / b;
+            }
+        }
+        const calc = new Calculadora();
+        console.log(calc.somar(7,15));// com o código comentado acima é possivel substituir o numero pelo "a"
+        console.log(calc.subtrair(7,15));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

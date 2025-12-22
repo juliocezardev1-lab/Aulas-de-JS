@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe e objeto</title>
+    <script>
+        class Carro {
+            constructor(cor,modelo,ano){
+                this.cor = cor;
+                this.modelo = modelo;
+                this.ano = ano;
+            }
+            ligar(){
+                console.log(`${this.modelo} ligado!`);
+            }
+        }
+        const fusca = new Carro("azul","fusca",1970);
+        const carros = [
+            new Carro("vermelho","Charles Leclerc",2020),
+            new Carro("azul","RB20",2025),
+            new Carro("preto","BMW",2019)
+        ];
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
